@@ -2,7 +2,6 @@ name: Py35Sci
 channels: !!python/tuple
 - defaults
 dependencies:
-- configobj=5.0.6=py35_0
 - libgfortran=3.0.0=1
 - mkl=11.3.3=0
 - numpy=1.11.2=py35_0
@@ -24,9 +23,13 @@ dependencies:
 - zlib=1.2.8=3
 - pip:
   - autopep8==1.2.4
+  - configobj==5.0.6
+  - dill==0.2.5
+  - jellyfish==0.5.6
   - pbr==1.10.0
   - pep8==1.7.0
   - stevedore==1.16.0
+  - tqdm==4.10.0
   - virtualenv==15.0.2
   - virtualenv-clone==0.2.6
   - virtualenvwrapper==4.7.1
