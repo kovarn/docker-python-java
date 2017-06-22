@@ -4,7 +4,6 @@ MAINTAINER Mustafa Khandwawala <mustafa.svnit@gmail.com>
 
 COPY environment.yml /
 RUN conda env create -f /environment.yml
-RUN echo source activate Py35Sci >> /root/.bashrc \
-    && echo 'alias train="python ../train.py"' >> /root/.bashrc \
-    && echo 'alias classify="python ../classify.py"' >> /root/.bashrc
+RUN echo source activate Py36Sci >> /root/.bashrc \
+    && echo 'export PYTHONPATH="/dist/python"' >> /root/.bashrc 
 COPY java /dist/java
